@@ -1,6 +1,6 @@
 +++
 author = "Mandarine Team"
-title = 'Release Mandarine 1.1'
+title = 'Mandarine 1.1'
 date = 2024-12-15
 description = "Release notes for version r1.1"
 +++

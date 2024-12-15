@@ -29,15 +29,13 @@ jobs:
           DATE=$(date +%Y-%m-%d)
           BODY="${{ fromJSON(steps.release.outputs.result).body }}"
 
-          # Create post file
           POST_PATH="content/posts/release-${VERSION}/index.md"
           mkdir -p "$(dirname "$POST_PATH")"
 
-          # Generate front matter
           cat > "$POST_PATH" << EOL
           +++
           author = "Mandarine Team"
-          title = 'Release ${TITLE}'
+          title = '${TITLE}'
           date = ${DATE}
           description = "Release notes for version ${VERSION}"
           +++
